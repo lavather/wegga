@@ -22,7 +22,7 @@ body {
     overflow:scroll;
     color: var(--font-white);
     box-sizing: border-box; 
-    max-width: 100vh;
+    max-width: 100vw;
 }
 
 /* Scrollbar */
