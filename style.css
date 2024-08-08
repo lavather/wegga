@@ -28,6 +28,10 @@ body {
     border: transparent;
 }
 
+.no-scroll{
+    overflow:hidden;
+}
+
 /* Flex utilities */
 .flex, .navbar, .links-index, .logo, .centered-text, .tile, .columns, .download-prev {
     display: flex;
