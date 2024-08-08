@@ -1,0 +1,473 @@
+:root {
+    --primary-bg: rgba(136, 218, 155, 0.8);
+    --hover-bg: rgba(249, 246, 246, 0.2);
+    --font-white: white;
+    --primary-font: "Crimson Text", serif;
+    --secondary-font: "Dancing Script", cursive;
+}
+
+body {
+    margin: 0;
+    background: url("./images/soil.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: var(--font-white);
+    box-sizing: border-box;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 4px;
+}
+::-webkit-scrollbar-track {
+    background: none;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(52, 161, 52);
+    border-radius: 20px;
+    border: transparent;
+}
+
+/* Flex utilities */
+.flex, .navbar, .links-index, .logo, .centered-text, .tile, .columns, .download-prev {
+    display: flex;
+    justify-content: center;
+}
+
+/* General styles */
+.grid-membership, .image-grid, section {
+    gap: 10px;
+}
+
+.opaque, .opaque:hover, .navbar, .navbar:hover {
+    transition: 1s;
+}
+
+/* Navbar */
+.navbar {
+    height: 8vh;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar:hover {
+    background-color: var(--hover-bg);
+}
+
+/* Links */
+a, .links-index {
+    background-color: var(--primary-bg);
+    background-clip: text;
+    color: transparent;
+}
+
+a {
+    font-size: 2.5rem;
+}
+
+.links-index {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    font-size: 80px;
+    margin: 0;
+}
+
+/* Typography */
+.crimson-text-bold-italic, .crimson-text-regular {
+    font-family: var(--primary-font);
+}
+
+.crimson-text-bold-italic {
+    font-weight: 700;
+    font-style: italic;
+}
+
+.crimson-text-regular {
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dancing-script {
+    font-family: var(--secondary-font);
+    font-weight: 100;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 3rem;
+    margin: 20px;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h4 {
+    margin-top: 20px;
+    font-size: 1.6rem;
+}
+
+.p-subtitle-about {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.p-about, ul, .full-width, .price, .p-member, .member, .wegga-full, .logo-text, .contact-text, h1{
+    margin: 0;
+}
+
+.p-about, ul, .full-width, .price, .p-member, .member, .wegga-full, .logo-text, .contact-text {
+    font-size: 1.4rem;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+    margin: auto;
+    font-size: 2rem;
+}
+
+.wegga-full {
+    font-size: 1.8rem;
+}
+
+.p-member, .price {
+    font-size: 1.2rem;
+}
+
+.logo-text {
+    font-style: italic;
+    font-size: 3rem;
+    margin: 20px 0 10px 0;
+    display: inline-block;
+}
+
+.contact-text {
+    font-size: 2rem;
+    margin-top:4vh;
+}
+
+/* Index page */
+.logo {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    align-items: center;
+}
+
+.centered-text {
+    z-index: 2;
+    color: rgba(239, 241, 239, 0.8);
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.tiles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas: "membership about" "gallery gallery";
+    gap: 10px;
+    z-index: 2;
+}
+
+.tile {
+    align-items: center;
+    z-index: 999;
+}
+
+.tile:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: var(--primary-bg);
+}
+
+.membership {
+    grid-area: membership;
+}
+
+.about {
+    grid-area: about;
+}
+
+.gallery {
+    grid-area: gallery;
+    grid-column: 1 / -1;
+}
+
+/* About page */
+.columns {
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+section {
+    margin-top: 10vh;
+    padding: 10px;
+}
+
+.flex-small {
+    width: 20vw;
+}
+
+.flex-big {
+    width: 40vw;
+}
+
+/* Icons */
+.icon-flower {
+    width: 15vw;
+    margin-top: 8vh;
+}
+
+.icon-planter {
+    width: 15vw;
+}
+
+.icon-tools {
+    width: 30vw;
+    overflow: hidden;
+}
+
+/* Membership page */
+.grid-membership {
+    margin-top: 20px;
+    padding: 0 100px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(400px, 1fr));
+    grid-template-rows: 60px 220px 220px 220px;
+    gap: 10px;
+}
+
+.opaque {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 20px 10px;
+    width: 100%;  /* Ensures it takes up the full width of the grid cell */
+    height: 100%; /* Ensures it takes up the full height of the grid cell */
+    box-sizing: border-box; /* Includes padding in the width and height */
+}
+
+.opaque:hover {
+    background-color: var(--hover-bg);
+}
+
+.box{
+    width:25vw;;
+}
+
+/* Text alignment */
+.center, .links-index, .contact-text, .centered-text, section {
+    text-align: center;
+}
+
+/* Gallery page */
+.image-grid {
+    width: 80vw;
+    margin: 5vh auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    grid-auto-flow: dense;
+    grid-auto-rows: minmax(200px, 1fr);
+    gap: 10px;
+}
+
+.card {
+    display: block;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wide {
+    grid-column: span 2;
+}
+
+.tall {
+    grid-column: span 1;
+}
+
+/* Contact page */
+.pdf-preview {
+    width: 25vw;
+    height: 70vh;
+}
+
+.download-prev {
+    gap: 50px;
+    margin-top: 50px;
+}
+
+/*Media-Queries*/
+
+@media (max-width:480px){
+    /*Fonts & Links*/
+    .links-index{
+        font-size:2rem;
+    }
+
+    h1{
+        font-size:2.5rem;
+    }
+
+    h2{
+        font-size:2rem;
+    }
+
+    h3{
+        font-size:1.3rem;
+    }
+    
+    h4 {
+        font-size: 1.2rem;
+        margin:0;
+    }
+
+    .wegga-full,.logo-text{
+        font-size:1.5rem;
+    }
+
+    .contact-text,.p-subtitle-about{
+        font-size:1.2rem;
+    }
+
+    a,.member,.p-about,.p-member, ul{
+        font-size:1rem;
+    }
+
+    .full-width{
+        font-size:1.3rem;
+    }
+
+    .price{
+        font-size:0.8rem;
+    }
+
+    ul{
+        display: inline-block; /* Makes the UL take only as much space as needed */
+        text-align: left; /* Ensures the text within the list items is left-aligned */
+        padding-left: 0; /* Removes default left padding */
+        margin: 0 auto; /* Centers the UL itself */
+        text-align:center;
+    }
+
+    li{
+        list-style-position: inside;
+        margin-top:10px;
+    }
+
+    .contact-text{
+        font-size:1.2rem;
+        padding:0 10px;
+    }
+
+    /*Navbar*/
+
+    .navbar {
+        height: 4vh;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /*Membership-page*/
+
+    .grid-membership {
+        margin-top:0;
+        padding: 0 15px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px repeat(6, 260px);
+        align-items: center;
+    }
+
+    .opaque {
+        align-items: center;
+    }
+    
+    .box{
+        width:60vw;
+    }
+
+    .icon-planter{
+        width:50vw;
+        margin-bottom:20px;
+    }
+    
+    .icon-tools {
+        width: 80vw;
+        overflow: hidden;
+    }
+
+    .flex{
+        flex-direction:column;
+    }
+
+    /*Gallery*/
+
+    .image-grid {
+        width: 90vw;
+        margin: 0 auto;
+        grid-template-columns: repeat(2, minmax(120px, 1fr));
+    }
+
+    /*About*/
+
+    .columns {
+        align-items: center;
+        box-sizing: border-box;
+        display:flex;
+        flex-direction:column;
+
+    }
+    
+    section {
+        margin-top: 10px;
+        padding: 10px;
+
+    }
+    
+    .flex-small {
+        width:80vw;;
+    }
+    
+    .flex-big {
+        width: 80vw;
+    }
+
+    .flex-big,.flex-small{
+        background-color: var(--hover-bg);
+    }
+
+    .icon-flower{
+        width:40vw;
+        margin-top:1vh;
+    }
+
+    /*Contact*/
+
+    .pdf-preview {
+        width: 80vw;
+        height: 60vh;
+    }
+    
+    .download-prev {
+        display:flex;
+        flex-direction:column;
+        align-items: center;;
+        gap: 50px;
+        margin-top: 50px;
+    }
+}
+
+
+
