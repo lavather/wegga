@@ -13,7 +13,7 @@ body {
     background-size: cover;
     color: var(--font-white);
     box-sizing: border-box;
-    max-height:100dvh;
+    max-height:100svh;
 }
 
 /* Scrollbar */
