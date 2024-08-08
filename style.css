@@ -311,6 +311,104 @@ section {
 
 /*Media-Queries*/
 
+@media (orientation: portrait){
+    
+    /*Navbar*/
+
+    .navbar {
+        height: 4vh;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /*Membership-page*/
+
+    .grid-membership {
+        margin-top:2vh;
+        padding: 0 15px;
+        grid-template-columns: .6fr;
+        grid-template-rows: 60px repeat(6, 360px);
+        place-content: center;
+    }
+
+    .opaque {
+        align-items: center;
+    }
+    
+    .box{
+        width:60vw;
+    }
+
+    .icon-planter{
+        width:30vw;
+        margin-bottom:20px;
+    }
+    
+    .icon-tools {
+        width: 80vw;
+        overflow: hidden;
+    }
+
+    .flex{
+        flex-direction:column;
+    }
+
+    /*Gallery*/
+
+    .image-grid {
+        width: 90vw;
+        margin: 0 auto;
+        grid-template-columns: repeat(2, minmax(120px, 1fr));
+    }
+
+    /*About*/
+
+    .columns {
+        align-items: center;
+        box-sizing: border-box;
+        display:flex;
+        flex-direction:column;
+
+    }
+    
+    section {
+        margin-top: 10px;
+        padding: 10px;
+    }
+    
+    .flex-small {
+        width:80vw;;
+    }
+    
+    .flex-big {
+        width: 80vw;
+    }
+
+    .flex-big,.flex-small{
+        background-color: var(--hover-bg);
+    }
+
+    .icon-flower{
+        width:35vw;
+        margin-top:1vh;
+    }
+
+    /*Contact*/
+
+    .pdf-preview {
+        width: 80vw;
+        height: 60vh;
+    }
+    
+    .download-prev {
+        display:flex;
+        flex-direction:column;
+        align-items: center;;
+        gap: 50px;
+        margin-top: 50px;
+    }
+}
+
 @media (max-width:480px){
     /*Fonts & Links*/
     .links-index{
@@ -372,101 +470,7 @@ section {
         padding:0 10px;
     }
 
-    /*Navbar*/
-
-    .navbar {
-        height: 4vh;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    /*Membership-page*/
-
-    .grid-membership {
-        margin-top:0;
-        padding: 0 15px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 60px repeat(6, 260px);
-        align-items: center;
-    }
-
-    .opaque {
-        align-items: center;
-    }
-    
-    .box{
-        width:60vw;
-    }
-
-    .icon-planter{
-        width:50vw;
-        margin-bottom:20px;
-    }
-    
-    .icon-tools {
-        width: 80vw;
-        overflow: hidden;
-    }
-
-    .flex{
-        flex-direction:column;
-    }
-
-    /*Gallery*/
-
-    .image-grid {
-        width: 90vw;
-        margin: 0 auto;
-        grid-template-columns: repeat(2, minmax(120px, 1fr));
-    }
-
-    /*About*/
-
-    .columns {
-        align-items: center;
-        box-sizing: border-box;
-        display:flex;
-        flex-direction:column;
-
-    }
-    
-    section {
-        margin-top: 10px;
-        padding: 10px;
-
-    }
-    
-    .flex-small {
-        width:80vw;;
-    }
-    
-    .flex-big {
-        width: 80vw;
-    }
-
-    .flex-big,.flex-small{
-        background-color: var(--hover-bg);
-    }
-
-    .icon-flower{
-        width:40vw;
-        margin-top:1vh;
-    }
-
-    /*Contact*/
-
-    .pdf-preview {
-        width: 80vw;
-        height: 60vh;
-    }
-    
-    .download-prev {
-        display:flex;
-        flex-direction:column;
-        align-items: center;;
-        gap: 50px;
-        margin-top: 50px;
-    }
+   
 }
 
 
