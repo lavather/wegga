@@ -19,7 +19,7 @@ html{
 
 body {
     margin: 0;
-
+    overflow:scroll;
     color: var(--font-white);
     box-sizing: border-box; 
     max-width: 100svh;
