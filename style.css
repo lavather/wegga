@@ -13,7 +13,7 @@ body {
     background-size: cover;
     color: var(--font-white);
     box-sizing: border-box;
-    background-attachment:fixed;
+    max-height:120vh;
 }
 
 /* Scrollbar */
