@@ -13,6 +13,7 @@ body {
     background-size: cover;
     color: var(--font-white);
     box-sizing: border-box;
+    background-attachment:fixed;
 }
 
 /* Scrollbar */
@@ -28,9 +29,6 @@ body {
     border: transparent;
 }
 
-.no-scroll{
-    overflow:hidden;
-}
 
 /* Flex utilities */
 .flex, .navbar, .links-index, .logo, .centered-text, .tile, .columns, .download-prev {
