@@ -6,11 +6,15 @@
     --secondary-font: "Dancing Script", cursive;
 }
 
-html{
+.background{
     background: url("./images/soil.jpg") no-repeat center center fixed;
     background-size: cover;
-    height: 100%;
-    overflow: hidden;
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100lvh
 }
 
 body {
