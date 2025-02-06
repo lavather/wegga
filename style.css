@@ -453,11 +453,11 @@ section {
     }
 
     .contact-text,.p-subtitle-about{
-        font-size:1.2rem;
+        font-size:1.6rem;
     }
 
     a,.member,.p-about,.p-member, ul{
-        font-size:1rem;
+        font-size:1.6rem
     }
 
     .full-width{
@@ -486,7 +486,9 @@ section {
         padding:0 10px;
     }
 
-   
+    .scio{
+        font-size:1rem;
+    }
 }
 
 
