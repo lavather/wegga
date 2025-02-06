@@ -19,7 +19,7 @@
 
 body {
     margin: 0 ;
-
+    background-color:rgb(17, 17, 17);
     color: var(--font-white);
     box-sizing: border-box; 
     max-width: 100svw;
