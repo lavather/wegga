@@ -118,11 +118,11 @@ h3 {
 
 h4 {
     margin-top: 20px;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 .p-subtitle-about {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -353,7 +353,7 @@ section {
     }
     
     .box{
-        width:60vw;
+        width:70vw;
     }
 
     .icon-planter{
@@ -362,7 +362,7 @@ section {
     }
     
     .icon-tools {
-        width: 60vw;
+        width: 50vw;
         overflow: hidden;
     }
 
