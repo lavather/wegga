@@ -165,6 +165,7 @@ h4.crimson-text-bold-italic{
 .contact-text {
     font-size: 2rem;
     margin-top:4vh;
+    padding:5px;
 }
 
 .telephone{
@@ -499,9 +500,7 @@ section {
         padding:0 10px;
     }
 
-    .scio{
-        font-size:1rem;
-    }
+
 
 
 }
