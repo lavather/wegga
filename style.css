@@ -470,6 +470,10 @@ section {
         font-size:1.6rem;
     }
 
+    .scio{
+        font-size:1rem;
+    }
+
     a,.member,.p-about,.p-member, ul{
         font-size:1.6rem
     }
