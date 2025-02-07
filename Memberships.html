@@ -1,37 +1,67 @@
 <!doctype html>
-
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Wegga Growing Community</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="background"></div>
-        <div class="logo" aria-label="Wegga Growing Community Logo">
-            <div class="centered-text">
-                <h1 class="crimson-text-bold-italic">WEGGA</h1>
-                <p class="wegga-full crimson-text-bold-italic">West End Growing Grounds Association</p>
-                <p class="logo-text dancing-script">Growing your own - locally.</p>
+<head>
+    <meta charset="utf-8">
+    <title>Wegga Growing Community</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <header>
+        <nav class="navbar crimson-text-bold-italic" aria-label="Main navigation">
+            <a href="./index.html">Home</a>
+            <a href="./About.html">About</a>
+            <a href="./Gallery.html">Gallery</a>
+            <a href="./Contact.html">Contact</a>
+        </nav>
+    </header>
+    <main aria-labelledby="membership-heading">
+        <section class="grid-membership" id="membership-download" >
+            <h3 id="membership-heading" class="full-width crimson-text-bold-italic">Memberships and Prices</h3>
+            <div class="flex opaque" role="region" aria-labelledby="group-membership">
+                <img src="./images/plant12.png" class="icon-planter" alt="comic-style wooden planter-box"/>
+                <div class="box">
+                    <h4 id="group-membership" class="crimson-text-bold-italic">Group Membership</h4>
+                    <p class="price">£ 68.00</p>
+                    <p class="p-member crimson-text-regular">You will be given four 8ft x 4ft raised garden beds</p>
+                </div>
             </div>
-        </div>
-        <div class="tiles">
-            <div class="tile membership crimson-text-bold-italic" aria-label="Membership information section">
-                <a class="links-index" href="./Memberships.html" aria-label="link to Membership page">Memberships</a>
+            <div class="flex opaque" role="region" aria-labelledby="individual-membership">
+                <img src="./images/plant12.png" class="icon-planter" alt="comic-style wooden planter-box"/>
+                <div class="box">
+                    <h4 id="individual-membership" class="crimson-text-bold-italic">Individual Membership</h4>
+                    <p class="price">£ 30.00 </p>
+                    <p class="p-member crimson-text-regular">You will be given two 8ft x 4ft raised garden beds</p>
+                </div>
             </div>
-            <div class="tile about crimson-text-bold-italic" aria-label="Learn more about our Community">
-                <a class="links-index" href="./About.html" aria-label="link to About page">About Us</a>
+            <div class="flex opaque" role="region" aria-labelledby="non-growing-membership">
+                <img src="./images/plant12.png" class="icon-planter" alt="comic-style wooden planter-box"/>
+                <div class="box">
+                    <h4 id="non-growing-membership" class="crimson-text-bold-italic">Non-growing Membership</h4>
+                    <p class="p-member crimson-text-regular">Membership for those who wish to engage in the community</p>
+                </div>
             </div>
-            <div class="tile gallery crimson-text-bold-italic" aria-label="See Photos of our Gardens and our members Produce and Beds">
-                <a class="links-index" href="./Gallery.html" aria-label="link to Photo Gallery page">Gallery</a>
+            <div class="flex opaque" role="region" aria-labelledby="refundable-key">
+                <img src="./images/plant12.png" class="icon-planter" alt="comic-style wooden planter-box"/>
+                <div class="box">
+                    <h4 id="refundable-key" class="crimson-text-bold-italic">Refundable Key</h4>
+                    <p class="price">£ 5.00</p>
+                    <p class="member crimson-text-regular">Your deposit will be given back to you upon returning the key</p>
+                </div>
             </div>
-        </div>
-    </body>
-
+            <div class="opaque center" aria-labelledby="tools-included-heading">
+                <h2 id="tools-included" class="crimson-text-bold-italic" >Tools included!</h2>
+                <p class="member crimson-text-regular">Every growing member will receive a free toolbag to use within the growing grounds for all their gardening needs.</p>
+            </div>
+            <div class="flex opaque">
+                <img src="./images/toolbag.avif" class="icon-planter opacity" alt="Photo of toolbag hanging on the side of a raised garden bed"/>
+                <img src="./images/tools.avif" class="icon-tools opacity" alt="tools set showing all tools included in the toolbag"/>
+            </div>
+        </section>
+    </main>
+    <script src="index.js" type="module"></script>
+</body>
 </html>
