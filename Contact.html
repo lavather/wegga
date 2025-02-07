@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <header>
-        <nav class="navbar crimson-text-bold-italic">
+        <nav class="navbar crimson-text-bold-italic" aria-label="Main navigation">
             <a href="./index.html">Home</a>
             <a href="./Memberships.html">Memberships</a>
             <a href="./About.html">About</a>
@@ -18,9 +19,15 @@
         </nav>
     </header>
     <main>
-        <div class="download-prev">
-            <iframe name="Application" class="pdf-preview" src="./Application.pdf" type="application/pdf" title="Application"></iframe>
-            <iframe name="RulesGuidelines" class="pdf-preview" src="./Rules&Guidelines.pdf" type="application/pdf" title="Rules & Guidelines"></iframe>
+        <div class="download-prev" Aria-label="Download-pdfs">
+            <div>
+                <h3 class="crimson-text-bold-italic" id="application-label">Application Form pdf</h3>
+                <iframe name="Application" class="pdf-preview" src="./Application.pdf" type="application/pdf" title="Application"></iframe>
+            </div>
+            <div class="pdf-container">
+                <h3 class="crimson-text-bold-italic" id="rules-guidelines-label">Rules & Guidelines pdf</h3>
+                <iframe name="RulesGuidelines" class="pdf-preview" src="./Rules&Guidelines.pdf" type="application/pdf" title="Rules & Guidelines" aria-labelledby="rules-guidelines-label"></iframe>
+            </div>
         </div>
         <p class="contact-text crimson-text-regular">
             If interested, please contact <a href="mailto:info@example.com">info@wegga.org</a> or call <span class="telephone">07710 782510</span>.
